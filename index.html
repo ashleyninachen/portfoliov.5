@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ashley chen | designer</title>
+    <meta name="description" content="Ashley Chen is an aspiring UX/UI Designer. This is her portfolio.">
+    <meta name="author" content="Ashley Chen">
+    <meta name="keywords" content="Ashley Chen, ashley chen, web development, website portfolio, user experience, user experience research, interaction design, design, IxD, UxD, UX/UI">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+    </style>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon5.ico" type="image/x-icon">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+      <a href="#me" class="active">me</a>
+      <a href="#film">play</a>
+      <a href="#ux-ui">work</a>
+  </div>
+
+
+	<div class="container">
+		<a href="#" id="work" class="parallaxTilt_hover">
+            <figure class="tilter_figure">
+                <img class="tilter_image" src="images/ash.jpg" alt="it-me" />
+                <div class="tilter_deco"></div>
+                <figcaption class="tilter_caption">
+                    <h3 class="tilter_title">Ashley Chen</h3>
+                    <p class="tilter_tag"><span>UX/UI Designer</span></p>
+                </figcaption>
+            </figure>
+        </a>
+	</div>
+
+  <footer id="fixed-bottom">
+    <li><a href="#dribble"><i class="fab fa-dribbble"></i></a></li>
+    <li><a href="https://twitter.com/ashleynchen"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#instagram"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://linkedin.com/ashleyninachen"><i class="fab fa-linkedin-in"></i></a></li>
+
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/parallaxTilt.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+
+
+
+//	default opts:
+//	parallaxMultiple: 0.1,
+//	tiltMultiple: 0.05,
+//      duration: 500,
+//      easing:'easeOutExpo'
+            $('.tilter_image').parallaxTilt({
+              parallaxMultiple: .18
+            });
+            $('.tilter_deco').parallaxTilt({
+              parallaxMultiple: .05
+            });
+            $('.tilter_caption').parallaxTilt({
+              parallaxMultiple:  -(0.08)
+            });
+
+        })();
+    </script>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
